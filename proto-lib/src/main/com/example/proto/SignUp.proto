@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package com.example.proto;
+
+option java_multiple_files = true;
+option java_outer_classname = "SignUpPoroto";
+
+message SignUpRequest {
+  string id = 1;
+  string name = 2;
+  string password = 3;
+}
+
+message SignUpResponse {
+  string id = 1;
+}
